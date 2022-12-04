@@ -25,7 +25,7 @@ public class WhController {
       writer.write(result);
   }
   
-  @EnjoyRequestMapping("/query2")
+  @EnjoyRequestMapping("/query222")
   public void query2(HttpServletRequest request, HttpServletResponse response,
       @EnjoyRequestParam("name") String name,@EnjoyRequestParam("age") String age) throws IOException {
       PrintWriter writer = response.getWriter();
