@@ -24,5 +24,13 @@ public class WhController {
       String result = whService.query(name,age);
       writer.write(result);
   }
+  
+  @EnjoyRequestMapping("/query2")
+  public void query2(HttpServletRequest request, HttpServletResponse response,
+      @EnjoyRequestParam("name") String name,@EnjoyRequestParam("age") String age) throws IOException {
+      PrintWriter writer = response.getWriter();
+      String result = whService.query(name,age);
+      writer.write(result);
+  }
 
 }
